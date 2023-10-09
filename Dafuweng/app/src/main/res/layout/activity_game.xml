@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F3F3">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234"
+            android:textColor="#3E2929"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/iv_record"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/record"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_below="@id/rl_1"
+        android:layout_above="@id/ll_1"/>
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加 款"
+            android:background="@drawable/btn_login"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:layout_marginHorizontal="12dp"/>
+
+        <Button
+            android:id="@+id/btn_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扣 款"
+            android:background="@drawable/btn_login1"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:layout_marginHorizontal="12dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

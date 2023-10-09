@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="玩家 "
+        android:textColor="#1C1B1B"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/tv_datetime"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/tv_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="玩家 "
+        android:textStyle="bold"
+        android:textColor="#8C2282"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/tv_datetime"
+        android:layout_toRightOf="@+id/tv_1"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="玩家 "
+        android:textColor="#1C1B1B"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/tv_datetime"
+        android:layout_toRightOf="@+id/tv_name1"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="玩家 "
+        android:textStyle="bold"
+        android:textColor="#8C2282"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/tv_datetime"
+        android:layout_toRightOf="@+id/tv_2"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="玩家 "
+        android:textColor="#1C1B1B"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/tv_datetime"
+        android:layout_toRightOf="@+id/tv_name2"/>
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="玩家 "
+        android:textColor="#1AA31A"
+        android:paddingHorizontal="5dp"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/tv_datetime"
+        android:layout_toRightOf="@+id/tv_3"/>
+
+    <TextView
+        android:id="@+id/tv_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
